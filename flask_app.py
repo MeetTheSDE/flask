@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.externals import joblib
 app = Flask(__name__)
 
-@app.route("/",methods=['POST','GET'])
+@app.route("/",methods=['POST'])
 def index():
     if request.method == 'POST':
         x=request.form['message']
