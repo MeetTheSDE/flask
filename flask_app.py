@@ -8,7 +8,7 @@ def home():
     return render_template('index.html')
 
 @app.route("/predictcall",methods=['POST'])
-def index():
+def predictcall():
     if request.method == 'POST':
         x=request.form['message']
         sam=[x]
