@@ -3,7 +3,11 @@ import numpy as np
 from sklearn.externals import joblib
 app = Flask(__name__)
 
-@app.route("/",methods=['POST'])
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route("/predictcall",methods=['POST'])
 def index():
     if request.method == 'POST':
         x=request.form['message']
