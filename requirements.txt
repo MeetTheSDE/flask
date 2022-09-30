@@ -11,7 +11,7 @@ pytz==2020.1
 sqlparse==0.3.1
 Werkzeug==1.0.1
 whitenoise==5.0.1
-joblib==0.14.1
+joblib==1.2.0
 scikit-learn==0.22.1
 sklearn==0.0
 numpy>=1.9.2
